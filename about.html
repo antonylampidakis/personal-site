@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About</title>
+  <link rel="stylesheet" href="about.css" />
+</head>
+
+<body>
+  <!-- Top Bar -->
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <div class="logo">
+        <img src="/Logo.png" alt="Logo" />
+      </div>
+
+      <!-- Desktop nav -->
+      <nav class="nav" id="mainNav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="MycodeProjects.html">My code Projects</a>
+        <a href="volunteering.html">Volunteer</a>
+        <a href="about.html" aria-current="page">About</a>
+      </nav>
+
+      <!-- Theme -->
+      <button class="theme-btn" id="themeBtn" type="button" aria-label="Toggle theme">
+        <span class="icon icon-moon" aria-hidden="true"></span>
+        <span class="icon icon-sun" aria-hidden="true"></span>
+      </button>
+
+      <!-- Hamburger (mobile only) -->
+      <button class="menu-btn" id="menuBtn" type="button"
+              aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Mobile dropdown -->
+      <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="MycodeProjects.html">My code Projects</a>
+        <a href="volunteering.html">Volunteer</a>
+        <a href="about.html" aria-current="page">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- BASIC CV (no special background) -->
+    <section class="about">
+      <div class="container about__inner">
+        <article class="card cv-card">
+          <div class="cv-top">
+            <div class="cv-avatar">
+              <img src="/image.png" alt="Αντώνιος Γεώργιος Λαμπιδάκης" />
+            </div>
+
+            <div class="cv-main">
+              <h1 class="cv-name">Αντώνιος Γεώργιος Λαμπιδάκης</h1>
+              <div class="cv-role">Φοιτητής Πληροφορικής · Drone · Εθελοντισμός</div>
+
+              <div class="cv-meta">
+                <span class="meta-pill">📍 Αθήνα</span>
+                <span class="meta-pill">🎓 21 ετών</span>
+                <span class="meta-pill">🧠 Systems / Web</span>
+              </div>
+            </div>
+
+            <div class="cv-actions">
+              <a class="btn" href="Βιογραφικο.pdf" download>Κατεβάστε το Βιογραφικό</a>
+            
+            </div>
+          </div>
+
+          <p class="cv-text">
+            Είμαι ο Αντώνιος Γεώργιος Λαμπιδάκης, ένας νέος φοιτητής πληροφορικής, 21 ετών με πολύ
+             όρεξη για μάθηση και ενασχόληση στον τομέα της Επιστήμης μου. Με χαρακτηρίζει η 
+             υπευθυνότητα, η δημιουργικότητα και η σύνεση. Είμαι εργατικός και προσεκτικός σε 
+             οποιοδήποτε project αναλαμβάνω και καταβάλω κάθε προσπάθεια για την επιτυχή ολοκλήρωσή 
+             του.</p>
+
+          <div class="cv-skills" aria-label="Skills">
+            <span class="tag">C / C++</span>
+            <span class="tag">Java</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML/CSS</span>
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT ONLY (no form) -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title">Επικοινωνία</h2>
+
+        <div class="card contact-card">
+          <div class="contact-links">
+
+            <a class="contact-item" href="mailto:yourmail@example.com">
+              <span class="c-ico">✉️</span>
+              <span>
+                <strong>Email</strong>
+                <small>antonylampidakis@gmail.com</small>
+              </span>
+            </a>
+
+            <a class="contact-item" href="tel:+306900000000">
+              <span class="c-ico">📞</span>
+              <span>
+                <strong>Τηλέφωνο</strong>
+                <small>+30 6940787174</small>
+              </span>
+            </a>
+
+            <a class="contact-item" href="https://www.linkedin.com/in/%CE%B1%CE%BD%CF%84%CF%8E%CE%BD%CE%B7%CF%82-%CE%BB%CE%B1%CE%BC%CF%80%CE%B9%CE%B4%CE%B1%CE%BA%CE%B7%CF%82-99b71a249/" target="_blank" rel="noopener noreferrer">
+
+              <span>
+                <strong>LinkedIn</strong>
+                <small>linkedin.com/in/αντώνης-λαμπιδακης</small>
+              </span>
+            </a>
+
+            <a class="contact-item" href="https://github.com/antonylampidakis" target="_blank" rel="noopener noreferrer">
+
+              <span>
+                <strong>GitHub</strong>
+                <small>github.com/antonylampidakis</small>
+              </span>
+            </a>
+
+            <a class="contact-item" href="https://www.instagram.com/antonislampidakis/" target="_blank" rel="noopener noreferrer">
+
+              <span>
+                <strong>Instagram</strong>
+                <small>@antonislampidakis</small>
+              </span>
+            </a>
+
+            <a class="contact-item" href="https://www.facebook.com/antonylampidakis" target="_blank" rel="noopener noreferrer">
+
+              <span>
+                <strong>facebook</strong>
+                <small>antonylampidakis</small>
+              </span>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <strong>Αντώνιος Γεώργιος Λαμπιδάκης</strong>
+      </div>
+
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+      </nav>
+
+      <div class="footer-copy">© 2026 · All rights reserved</div>
+    </div>
+  </footer>
+
+  <script>
+    // Theme toggle
+    const themeBtn = document.getElementById("themeBtn");
+    themeBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+    });
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuBtn.addEventListener("click", () => {
+      const isOpen = mobileMenu.classList.toggle("is-open");
+      menuBtn.classList.toggle("is-open", isOpen);
+      menuBtn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    });
+
+    mobileMenu.querySelectorAll("a").forEach(a => {
+      a.addEventListener("click", () => {
+        mobileMenu.classList.remove("is-open");
+        menuBtn.classList.remove("is-open");
+        menuBtn.setAttribute("aria-expanded", "false");
+      });
+    });
+  </script>
+</body>
+</html>

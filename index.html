@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="el">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Antony Lampidakis</title>
+    <link rel="icon" type="image/png" href="LOGOAL.png">
+    <meta name="description" content="Προσωπικό portfolio του Αντώνιου Γ. Λαμπιδάκη. Φωτογραφία, video, drone, web development και projects πληροφορικής.">
+    <html lang="el">
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Top Bar -->
+    <header class="topbar">
+        <div class="container topbar__inner">
+            <div class="logo">
+            <img src="/Logo.png" alt="Logo" />
+            </div>
+
+            <nav class="nav" id="mainNav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="MycodeProjects.html">My code Projects</a>
+            <a href="volunteering.html">Volunteer</a>
+            <a href="about.html">About</a>
+          </nav>
+
+          <!-- ✅ Hamburger (μόνο mobile) -->
+          <button class="menu-btn" id="menuBtn" type="button"
+                  aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+            <span></span><span></span><span></span>
+          </button>
+
+          <!-- ✅ Mobile dropdown menu -->
+          <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="MycodeProjects.html">My code Projects</a>
+            <a href="volunteering.html">Volunteer</a>
+            <a href="about.html">About</a>
+          </nav>
+
+
+            <button class="theme-btn" id="themeBtn" type="button" aria-label="Toggle theme">
+            <span class="icon icon-moon" aria-hidden="true"></span>
+            <span class="icon icon-sun" aria-hidden="true"></span>
+            </button>
+        </div>
+    </header>
+
+
+    <main>
+      <!-- HERO -->
+     <section id="home" class="hero">
+        <div class="container hero__inner">
+
+          <div class="hero__text">
+            <h1>Αντώνιος Γεώργιος Λαμπιδάκης</h1>
+
+            <p style="text-align: justify;">
+              Είμαι ο Αντώνιος Γεώργιος Λαμπιδάκης, ένας νέος φοιτητής πληροφορικής, 21 ετών
+              με πολύ όρεξη για μάθηση και ενασχόληση στον τομέα της Επιστήμης μου. Με
+              χαρακτηρίζει η υπευθυνότητα, η δημιουργικότητα και η σύνεση. Είμαι εργατικός
+              και προσεκτικός σε οποιοδήποτε project αναλαμβάνω και καταβάλω κάθε προσπάθεια
+              για την επιτυχή ολοκλήρωσή του.
+            </p>
+
+
+            <div class="hero__socials">
+              <a href="https://www.instagram.com/antonislampidakis/" target="_blank" aria-label="Instagram"> <img src="/instagram.png" alt="Instagram"></a>
+              <a href="https://www.facebook.com/antonylampidakis" target="_blank" aria-label="Facebook"> <img src="/facebook.png" alt="Instagram"></a>
+              <a href="https://www.linkedin.com/in/%CE%B1%CE%BD%CF%84%CF%8E%CE%BD%CE%B7%CF%82-%CE%BB%CE%B1%CE%BC%CF%80%CE%B9%CE%B4%CE%B1%CE%BA%CE%B7%CF%82-99b71a249/" target="_blank" aria-label="LinkedIn"><img src="/linkedin-logo.webp" alt="Instagram"></a>
+              <a href="https://github.com/antonylampidakis" target="_blank" aria-label="GitHub"><img src="/github-logo.jpg" alt="Instagram"></a>
+              <a href="https://www.youtube.com/@antony_lampidakis" target="_blank" aria-label="Youtube"><img src="/youtube.png" alt="Youtube"></a>
+              <a href="mailto:antonylampidakis@gmail.com" aria-label="Email"><img src="/email.jpg" alt="email"></a>
+
+
+            </div>
+          </div>
+
+          <div class="hero__media" aria-label="Hero image placeholder">
+            <div class="myimage">
+              <img src="/image.png" alt="Aerial Ridge" />
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- INTERESTS / SECTIONS -->
+      <section class="section testimonials">
+        <div class="container">
+          <h2 class="section__title">Τομείς Ενασχόλησης</h2>
+
+          <div class="testimonials__grid">
+
+            <a class="card t-card t-card--link" href="portfolio.html">
+              <div class="t-card__quote">
+                <img class="t-card__image" src="/image1.jpeg" alt="Φωτογραφία-Video-Drone" />
+              </div>
+              <div class="t-card__person">
+                <div class="avatar">📸</div>
+                <div>
+                  <div class="name">Φωτογραφία-Video-Drone</div>
+                  <div class="role">
+                    Ασχολούμαι με φωτογραφία, βίντεο και λήψεις με drone – είναι τρόποι να αποτυπώνω στιγμές από μια διαφορετική οπτική.
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a class="card t-card t-card--link" href="MycodeProjects.html">
+              <div class="t-card__quote">
+                <img class="t-card__image" src="/image2.jpg" alt="Πληροφορική" />
+              </div>
+              <div class="t-card__person">
+                <div class="avatar">💻</div>
+                <div>
+                  <div class="name">Πληροφορική</div>
+                  <div class="role">
+                    Αγαπώ την Πληροφορική και μου αρέσει να εξερευνώ συνεχώς νέες τεχνολογίες.
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a class="card t-card t-card--link" href="volunteering.html">
+              <div class="t-card__quote">
+                <img class="t-card__image" src="/image3.jpg" alt="Εθελοντισμός" />
+              </div>
+              <div class="t-card__person">
+                <div class="avatar">🤝</div>
+                <div>
+                  <div class="name">Εθελοντισμός</div>
+                  <div class="role">
+                    Μου αρέσει να προσφέρω μέσα από τον εθελοντισμό και να βοηθάω όπου μπορώ.
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </section>
+
+
+     <!-- CV / CTA Section -->
+      <section class="cv-cta">
+        <div class="cv-cta__inner">
+          <h2>Το Βιογραφικό μου είναι εδώ!</h2>
+          <p>
+            Το Βιογραφικό μου περιλαμβάνει την εμπειρία, τις δεξιότητες και τις δράσεις μου.
+           
+          </p>
+
+   
+          <a class="cv-cta__btn" href="Βιογραφικο.pdf" download>Κατεβάστε το Βιογραφικό μου</a>
+        </div>
+      </section>
+
+    </main>
+
+    <script>
+       // Theme toggle (ONE listener only)
+        const themeBtn = document.getElementById("themeBtn");
+
+        themeBtn.addEventListener("click", () => {
+          document.body.classList.toggle("dark");
+        });
+
+      // Mobile menu toggle
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      menuBtn.addEventListener("click", () => {
+        const isOpen = mobileMenu.classList.toggle("is-open");
+        menuBtn.classList.toggle("is-open", isOpen);
+        menuBtn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      });
+
+      // Close menu when clicking a link
+      mobileMenu.querySelectorAll("a").forEach(a => {
+        a.addEventListener("click", () => {
+          mobileMenu.classList.remove("is-open");
+          menuBtn.classList.remove("is-open");
+          menuBtn.setAttribute("aria-expanded", "false");
+        });
+      });
+    </script>
+
+  
+    <footer class="site-footer">
+      <div class="footer-inner">
+
+        <div class="footer-brand">
+          <strong>Αντώνιος Γεώργιος Λαμπιδάκης</strong>
+         
+        </div>
+
+        <nav class="footer-nav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+        </nav>
+
+        <div class="footer-copy">
+          © 2026 · All rights reserved
+        </div>
+
+      </div>
+    </footer>
+
+  </body>
+
+</html>

@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Photos</title>
+  <link rel="stylesheet" href="portfolio.css" />
+</head>
+
+<body>
+    
+  <!-- Top Bar -->
+    <header class="topbar">
+        <div class="container topbar__inner">
+            <div class="logo">
+            <img src="/Logo.png" alt="Logo" />
+            </div>
+
+            <nav class="nav" id="mainNav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="MycodeProjects.html">My code Projects</a>
+            <a href="volunteering.html">Volunteer</a>
+            <a href="about.html">About</a>
+          </nav>
+
+          <!-- ✅ Hamburger (μόνο mobile) -->
+          <button class="menu-btn" id="menuBtn" type="button"
+                  aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+            <span></span><span></span><span></span>
+          </button>
+
+          <!-- ✅ Mobile dropdown menu -->
+          <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="MycodeProjects.html">My code Projects</a>
+            <a href="volunteering.html">Volunteer</a>
+            <a href="about.html">About</a>
+          </nav>
+
+
+            <button class="theme-btn" id="themeBtn" type="button" aria-label="Toggle theme">
+            <span class="icon icon-moon" aria-hidden="true"></span>
+            <span class="icon icon-sun" aria-hidden="true"></span>
+            </button>
+        </div>
+    </header>
+
+  <main class="page">
+    <section class="container">
+      <h1 class="title">Μy Portfolio</h1>
+      <p class="subtitle">Selected photos — click to view.</p>
+
+      <!-- Filters κάτω από τον τίτλο -->
+      <div class="filters" role="tablist" aria-label="Portfolio filters">
+
+        <button class="tab is-active" type="button" data-filter="all">Όλα</button>
+        <button class="tab" type="button" data-filter="cars">Cars-Motosports</button>
+        <button class="tab" type="button" data-filter="landscape">Landscape</button>
+        <button class="tab" type="button" data-filter="drone">Drone</button>
+        <button class="tab" type="button" data-filter="events">Events</button>
+        <button class="tab" type="button" data-filter="cityfilm">CityFilm Productions</button>
+
+      </div>
+
+      <br>
+      
+      <!-- CityFilm Productions section (κρυφό by default) -->
+      <section class="cityfilm" id="cityfilmSection" hidden>
+        <div class="cityfilm__card">
+          <h2 class="cityfilm__title">CityFilm Productions</h2>
+
+          <p class="cityfilm__text">
+            - cityfilm.gr
+          </p>
+
+          <div class="cityfilm__videos" aria-label="CityFilm videos">
+            <!-- ✅ YouTube embed: βάλε το VIDEO_ID -->
+          <div class="yt">
+            <iframe
+              src="https://www.youtube.com/embed/Jmo4Ul89meQ"
+              title="CityFilm video 1"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="yt">
+            <iframe
+              src="https://www.youtube.com/embed/IpW1g3Hgf6A"
+              title="CityFilm video 2"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          </div>
+
+          <div class="cityfilm__gallery" aria-label="CityFilm images">
+            <!-- Βάλε δικές σου εικόνες -->
+            <img src="cityfilm_logo.png" alt="CityFilm still 1">
+            <img src="imagecityfilm.jpg" alt="CityFilm still 2">
+            <img src="cityfilm1.jpg" alt="CityFilm still 3">
+            <img src="cityfilm2.jpg" alt="CityFilm still 4">
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Gallery Grid -->
+      <section class="grid" id="grid" aria-label="Photo grid">
+        <!-- Photo Card -->
+
+        <figure class="photo" data-cat="landscape">
+          <button class="photo__btn" type="button"
+                  data-full="bestphoto_1.JPG"
+                  data-title="Golden hour"
+                  data-desc="📍 Πηραιάς · Nikon D3500">
+           <img src="bestphoto_1.JPG" alt="Aerial Ridge">
+
+          </button>
+          <figcaption class="cap">
+            <div class="cap__title">📍 Πηραιάς</div>
+            <div class="cap__meta">Nikon D3500 </div>
+            <div class="cap__desc">Golden hour</div>
+          </figcaption>
+        </figure>
+
+        <figure class="photo" data-cat="landscape">
+          <button class="photo__btn" type="button"
+                  data-full="bestphoto_2.JPG"
+                  data-title="Mountains"
+                  data-desc="📍 Καρπενήσι · Nikon D3500">
+            <img src="bestphoto_2.JPG" alt="City Geometry" />
+          </button>
+          <figcaption class="cap">
+            <div class="cap__title">📍 Καρπενήσι</div>
+            <div class="cap__meta">Nikon D3500</div>
+            <div class="cap__desc">Mountains</div>
+          </figcaption>
+        </figure>
+
+        <figure class="photo" data-cat="events">
+          <button class="photo__btn" type="button"
+                  data-full="bestphoto_3.JPG"
+                  data-title="Fighter plane"
+                  data-desc="📍 Athens Fly week · Nikon D3500">
+            <img src="bestphoto_3.JPG" alt="Forest Light" />
+          </button>
+          <figcaption class="cap">
+            <div class="cap__title">📍 Athens Fly week</div>
+            <div class="cap__meta">Nikon D3500</div>
+            <div class="cap__desc">Fighter plane</div>
+          </figcaption>
+        </figure>
+
+        <figure class="photo" data-cat="landscape">
+          <button class="photo__btn" type="button"
+                  data-full="bestphoto_4.JPG"
+                  data-title="Village"
+                  data-desc="📍 Καρπενήσι · Nikon D3500">
+            <img src="bestphoto_4.JPG" alt="On the Field" />
+          </button>
+          <figcaption class="cap">
+            <div class="cap__title">📍 Καρπενήσι</div>
+            <div class="cap__meta">Nikon D3500</div>
+            <div class="cap__desc">Village</div>
+          </figcaption>
+        </figure>
+
+        <figure class="photo" data-cat="cars">
+          <button class="photo__btn" type="button"
+                  data-full="bestphoto_5.JPG"
+                  data-title="Μoto"
+                  data-desc="📍 Παπάγου · Nikon D3500">
+            <img src="bestphoto_5.JPG" alt="Coastline" />
+          </button>
+          <figcaption class="cap">
+            <div class="cap__title">📍 Παπάγου</div>
+            <div class="cap__meta">Nikon D3500</div>
+            <div class="cap__desc">Μoto</div>
+          </figcaption>
+        </figure>
+
+        <figure class="photo" data-cat="drone">
+          <button class="photo__btn" type="button"
+                  data-full="bestphoto_6.JPG"
+                  data-title="Sunset"
+                  data-desc="📍 Eύβοια · Dji Mini">
+            <img src="bestphoto_6.JPG" alt="Street Contrast" />
+          </button>
+          <figcaption class="cap">
+            <div class="cap__title">📍 Eύβοια</div>
+            <div class="cap__meta">Dji Mini</div>
+            <div class="cap__desc">Sunset</div>
+          </figcaption>
+        </figure>
+
+        <figure class="photo" data-cat="cars" data-tags="motorsport,track,speed">
+          <button class="photo__btn" type="button"
+            data-full="unnamed (1).jpg"
+            data-title="Track action"
+            data-desc="📍 O.A.K.A · Nikon D3500">
+            <img src="unnamed (1).jpg" alt="Motorsport on track" />
+          </button>
+          <figcaption class="cap">
+            <div class="cap__title">📍 O.A.K.A</div>
+            <div class="cap__meta">Nikon D3500</div>
+            <div class="cap__desc">Track action</div>
+          </figcaption>
+        </figure>
+
+        <figure class="photo" data-cat="landscape" data-tags="city,street,travel">
+          <button class="photo__btn" type="button"
+            data-full="unnamed (1).png"
+            data-title="Travel vibes"
+            data-desc="📍 Eύβοια · Nikon D3500">
+            <img src="unnamed (1).png" alt="City street scene" />
+          </button>
+          <figcaption class="cap">
+            <div class="cap__title">📍 Eύβοια</div>
+            <div class="cap__meta">Nikon D3500</div>
+            <div class="cap__desc">Travel vibes</div>
+          </figcaption>
+        </figure>
+
+        <figure class="photo" data-cat="drone" data-tags="color,festival,people">
+          <button class="photo__btn" type="button"
+            data-full="unnamed (2).jpg"
+            data-title="Peace"
+            data-desc="📍 Χολαργός · DJI Mini">
+            <img src="unnamed (2).jpg" alt="Colorful event moment" />
+          </button>
+          <figcaption class="cap">
+            <div class="cap__title">📍 Χολαργός</div>
+            <div class="cap__meta">DJI Mini</div>
+            <div class="cap__desc">Peace</div>
+          </figcaption>
+        </figure>
+
+        <figure class="photo" data-cat="events" data-tags="sunset,travel,scenery">
+          <button class="photo__btn" type="button"
+            data-full="unnamed (2).png"
+            data-title="Fire fighting aircraft"
+            data-desc="📍 Athens Fly week · Nikon D3500">
+            <img src="unnamed (2).png" alt="Sunset travel photo" />
+          </button>
+          <figcaption class="cap">
+            <div class="cap__title">📍 Athens Fly week</div>
+            <div class="cap__meta">Nikon D3500</div>
+            <div class="cap__desc">Fire fighting aircraft</div>
+          </figcaption>
+        </figure>
+
+        <figure class="photo" data-cat="landscape" data-tags="mountains,city,view">
+          <button class="photo__btn" type="button"
+            data-full="unnamed (3).jpg"
+            data-title="Travel vibes"
+            data-desc="📍 Village · Dji Mini">
+            <img src="unnamed (3).jpg" alt="Landscape view over hills" />
+          </button>
+          <figcaption class="cap">
+            <div class="cap__title">📍 Village</div>
+            <div class="cap__meta">Dji Mini</div>
+            <div class="cap__desc">Travel vibes</div>
+          </figcaption>
+        </figure>
+
+        <figure class="photo" data-cat="events" data-tags="drone,sky,minimal">
+          <button class="photo__btn" type="button"
+            data-full="unnamed (3).png"
+            data-title="Medical helicopter"
+            data-desc="📍 Athens Fly week · Nikon D3500">
+            <img src="unnamed (3).png" alt="Drone flying in the sky" />
+          </button>
+          <figcaption class="cap">
+            <div class="cap__title">📍 Athens Fly week</div>
+            <div class="cap__meta">Nikon D3500</div>
+            <div class="cap__desc">Medical helicopter</div>
+          </figcaption>
+        </figure>
+
+        <figure class="photo" data-cat="drone" data-tags="aerial,fields,patterns">
+          <button class="photo__btn" type="button"
+            data-full="unnamed (4).jpg"
+            data-title="Travel vibes"
+            data-desc="📍 Hotel · Dji Mini">
+            <img src="unnamed (4).jpg" alt="Aerial view of fields" />
+          </button>
+          <figcaption class="cap">
+            <div class="cap__title">📍 Hotel</div>
+            <div class="cap__meta">Dji Mini</div>
+            <div class="cap__desc">Travel vibes</div>
+          </figcaption>
+        </figure>
+
+        <figure class="photo" data-cat="landscape" data-tags="coast,city,panorama">
+          <button class="photo__btn" type="button"
+            data-full="unnamed (5).png"
+            data-title="Big city"
+            data-desc="📍 Athens· Nikon D3500">
+            <img src="unnamed (5).png" alt="Panoramic landscape view" />
+          </button>
+          <figcaption class="cap">
+            <div class="cap__title">📍 Athens</div>
+            <div class="cap__meta">Nikon D3500</div>
+            <div class="cap__desc">Big city</div>
+          </figcaption>
+        </figure>
+
+        <figure class="photo" data-cat="cars" data-tags="car,track,action">
+          <button class="photo__btn" type="button"
+            data-full="unnamed (6).jpg"
+            data-title="Motorsports"
+            data-desc="📍 O.A.K.A. · Nikon D3500">
+            <img src="unnamed (6).jpg" alt="Car racing on track" />
+          </button>
+          <figcaption class="cap">
+            <div class="cap__title">📍 O.A.K.A.</div>
+            <div class="cap__meta">Nikon D3500</div>
+            <div class="cap__desc">Motorsports</div>
+          </figcaption>
+        </figure>
+
+        <figure class="photo" data-cat="events" data-tags="car,corner,street">
+          <button class="photo__btn" type="button"
+            data-full="unnamed (6).png"
+            data-title="Agean Plane"
+            data-desc="📍 Athens Fly week · Nikon D3500">
+            <img src="unnamed (6).png" alt="Car taking a corner" />
+          </button>
+          <figcaption class="cap">
+            <div class="cap__title">📍 Athens Fly week</div>
+            <div class="cap__meta">Nikon D3500</div>
+            <div class="cap__desc">Agean Plane</div>
+          </figcaption>
+        </figure>
+
+        <figure class="photo" data-cat="events" data-tags="smoke,show,night">
+          <button class="photo__btn" type="button"
+            data-full="unnamed (7).jpg"
+            data-title="Motorsports"
+            data-desc="📍 O.A.K.A. · Nikon D3500">
+            <img src="unnamed (7).jpg" alt="Night event with smoke" />
+          </button>
+          <figcaption class="cap">
+            <div class="cap__title">📍 O.A.K.A.</div>
+            <div class="cap__meta">Nikon D3500</div>
+            <div class="cap__desc">Motorsports</div>
+          </figcaption>
+        </figure>
+
+        <figure class="photo" data-cat="landscape" data-tags="mountain,snow,nature">
+          <button class="photo__btn" type="button"
+            data-full="unnamed (7).png"
+            data-title="Big city with snow"
+            data-desc="📍 Athens · Nikon D3500">
+            <img src="unnamed (7).png" alt="Snowy mountain peak" />
+          </button>
+          <figcaption class="cap">
+            <div class="cap__title">📍 Athens</div>
+            <div class="cap__meta">Nikon D3500</div>
+            <div class="cap__desc">Big city with snow</div>
+          </figcaption>
+        </figure>
+
+
+      </section>
+    </section>
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox__overlay" data-close="1"></div>
+
+    <div class="lightbox__panel" role="dialog" aria-modal="true" aria-label="Image viewer">
+      <button class="lb-close" type="button" aria-label="Close" data-close="1">✕</button>
+      <img class="lb-img" id="lbImg" alt="" />
+      <div class="lb-meta">
+        <div class="lb-title" id="lbTitle"></div>
+        <div class="lb-desc" id="lbDesc"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+
+      // Tabs filter + CityFilm section toggle
+      const tabs = document.querySelectorAll(".tab");
+      const photos = document.querySelectorAll(".photo");
+      const grid = document.getElementById("grid");
+      const cityfilmSection = document.getElementById("cityfilmSection");
+
+      tabs.forEach(tab => {
+        tab.addEventListener("click", () => {
+          tabs.forEach(t => t.classList.remove("is-active"));
+          tab.classList.add("is-active");
+
+          const filter = tab.dataset.filter;
+
+          // ✅ CityFilm: κρύψε grid, δείξε section
+          if (filter === "cityfilm") {
+            grid.style.display = "none";
+            cityfilmSection.hidden = false;
+            return;
+          }
+
+          // ✅ Photos: δείξε grid, κρύψε CityFilm
+          cityfilmSection.hidden = true;
+          grid.style.display = "";
+
+          photos.forEach(p => {
+            const cat = p.dataset.cat;
+            const show = (filter === "all") || (cat === filter);
+            p.style.display = show ? "" : "none";
+          });
+        });
+      });
+
+
+    // Lightbox
+    const lb = document.getElementById("lightbox");
+    const lbImg = document.getElementById("lbImg");
+    const lbTitle = document.getElementById("lbTitle");
+    const lbDesc = document.getElementById("lbDesc");
+
+    document.querySelectorAll(".photo__btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        lbImg.src = btn.dataset.full;
+        lbImg.alt = btn.dataset.title || "Photo";
+        lbTitle.textContent = btn.dataset.title || "";
+        lbDesc.textContent = btn.dataset.desc || "";
+        lb.classList.add("is-open");
+        lb.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
+      });
+    });
+
+    lb.addEventListener("click", (e) => {
+      if (e.target.dataset.close) closeLb();
+    });
+
+    window.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeLb();
+    });
+
+    function closeLb(){
+      lb.classList.remove("is-open");
+      lb.setAttribute("aria-hidden", "true");
+      lbImg.src = "";
+      document.body.style.overflow = "";
+    }
+
+    // Theme toggle
+    const themeBtn = document.getElementById("themeBtn");
+    themeBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+    });
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuBtn.addEventListener("click", () => {
+      const isOpen = mobileMenu.classList.toggle("is-open");
+      menuBtn.classList.toggle("is-open", isOpen);
+      menuBtn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    });
+
+    // Close menu when clicking a link
+    mobileMenu.querySelectorAll("a").forEach(a => {
+      a.addEventListener("click", () => {
+        mobileMenu.classList.remove("is-open");
+        menuBtn.classList.remove("is-open");
+        menuBtn.setAttribute("aria-expanded", "false");
+      });
+    });
+
+     
+  </script>
+</body>
+<footer class="site-footer">
+  <div class="footer-inner">
+
+    <div class="footer-brand">
+      <strong>Αντώνιος Γεώργιος Λαμπιδάκης</strong>
+    </div>
+
+    <nav class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+    </nav>
+
+    <div class="footer-copy">
+      © 2026 · All rights reserved
+    </div>
+
+  </div>
+</footer>
+</html>
